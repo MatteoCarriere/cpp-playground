@@ -1,0 +1,33 @@
+# Build artifacts
+build/
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dylib
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile.cmake
+_deps/
+*.cmake
+!CMakeLists.txt
+
+# IDE
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.filters
+
+# macOS
+.DS_Store
+
+# Clang tooling
+compile_commands.json
+.cache/
