@@ -1,4 +1,4 @@
-# C++ Playground 🧪
+# C++ Playground 
 
 Repo personale per imparare e sperimentare con il C++ — esercizi, snippet, appunti.
 Nessun progetto finito qui: è un laboratorio.
@@ -44,16 +44,6 @@ g++ -std=c++17 -Wall -o out exercises/01_basics/hello.cpp && ./out
 - Make (opzionale)
 
 Testato su Linux. Dovrebbe funzionare su macOS e Windows (con MinGW/MSVC).
-
-## Roadmap
-
-- [x] Setup repo + struttura base
-- [ ] 01 — Tipi, variabili, I/O
-- [ ] 02 — Puntatori e riferimenti
-- [ ] 03 — OOP: classi e polimorfismo
-- [ ] 04 — STL: container e algoritmi
-- [ ] 05 — Template e generics
-- [ ] 06 — Gestione errori e eccezioni
 
 ## Contatti
 
