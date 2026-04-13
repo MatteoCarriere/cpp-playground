@@ -1,17 +1,18 @@
 # Build artifacts
 build/
+build/tmp
 *.o
 *.out
 *.exe
 *.a
 *.so
 *.dylib
+a.out
 
 # CMake
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
-Makefile.cmake
 _deps/
 *.cmake
 !CMakeLists.txt
@@ -25,9 +26,18 @@ _deps/
 *.vcxproj
 *.filters
 
+# Editor temp files
+*~
+*.swp
+*.swo
+
 # macOS
 .DS_Store
 
 # Clang tooling
 compile_commands.json
 .cache/
+
+# Env files
+.env
+.env.*
