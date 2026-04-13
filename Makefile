@@ -1,7 +1,8 @@
 CXX      := g++
 CXXFLAGS := -std=c++17 -Wall -Wextra -Wpedantic -I include
-SRC      := src/main.cpp
-OUT      := build/playground
+
+SRC := $(wildcard src/*.cpp)
+OUT := build/playground
 
 .PHONY: all clean run
 
