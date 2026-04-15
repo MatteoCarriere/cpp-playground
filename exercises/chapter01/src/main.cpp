@@ -10,8 +10,8 @@ int main()
     std::cout << "Enter another integer: ";
     std::cin >> num2;
 
-    std::cout << num1 << " + " << num2 << " is " << num1 + num2 << " .\n";
-    std::cout << num1 << " - " << num2 << " is " << num1 - num2 << " .\n";
+    std::cout << num1 << " + " << num2 << " is " << num1 + num2 << ".\n";
+    std::cout << num1 << " - " << num2 << " is " << num1 - num2 << ".\n";
 
     return 0;
 
