@@ -11,17 +11,18 @@ OUT := build/playground
 all: build $(OUT)
 
 build:
-	mkdir -p build
+	if not exist build mkdir build
 
 $(OUT): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 run: all
-	./$(OUT)
+	$(OUT)
 
 run-file:
+	if not exist build mkdir build
 	$(CXX) $(CXXFLAGS) $(file) -o build/tmp
-	./build/tmp
+	build\tmp
 
 clean:
-	rm -rf build
+	@rmdir /s /q build 2>nul || exit 0
