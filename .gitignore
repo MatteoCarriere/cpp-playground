@@ -8,6 +8,7 @@ build/tmp
 *.so
 *.dylib
 a.out
+out
 
 # CMake
 CMakeCache.txt
@@ -19,12 +20,6 @@ _deps/
 
 # IDE
 .vscode/
-.idea/
-*.user
-*.suo
-*.sln
-*.vcxproj
-*.filters
 
 # Editor temp files
 *~
