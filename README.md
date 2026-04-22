@@ -1,89 +1,54 @@
 # C++ Playground
 
-Piccolo spazio personale per imparare C++ attraverso esercizi,
-prove rapide e sperimentazione.
+Personal space for learning C++ through exercises and quick experiments, following [learncpp.com](https://www.learncpp.com).
 
-Questo repository **non contiene progetti finiti**: è un laboratorio
-dove testare idee, fare errori e capire come funziona davvero il linguaggio.
+This repository **does not contain finished projects** — it's a lab for testing ideas, making mistakes, and understanding how the language actually works.
 
 ---
 
-## Struttura del repository
+## Structure
 
 ```
 cpp-playground/
-├── src/            # main.cpp principale
-├── include/        # header condivisi (quando serviranno)
-├── exercises/      # esercizi e test rapidi
-├── build/          # file compilati (ignorata da git)
-├── Makefile
+├── ch01_basics/
+├── ch02_functions_and_files/
+├── ch03_debugging/
+├── ch04_fundamental_types/
+├── ch05_operators/
 └── README.md
 ```
 
----
-
-## Compilare il programma principale
-
-Usando Make:
-
-```
-make run
-```
-
-Questo comando:
-
-* crea la cartella `build/`
-* compila `src/main.cpp`
-* esegue il programma
+New chapters are added as the course progresses.
 
 ---
 
-## Compilare un esercizio manualmente
+## Compiling an exercise
 
-Esempio:
-
-```
-g++ -std=c++17 -Wall -Wextra -Wpedantic -o out exercises/01_hello.cpp
+```bash
+g++ -std=c++17 -Wall -Wextra -Wpedantic -o out ch02_functions_and_files/ex_02_1.cpp
 ./out
 ```
 
+No Makefile, no build system — single-file exercises don't need them.
+
 ---
 
-## Requisiti
+## Requirements
 
-* **g++ 10+** con supporto C++17
-* **Make** (opzionale ma consigliato)
+- **g++ 10+** with C++17 support
 
-Controllare la versione:
+Check your version:
 
-```
+```bash
 g++ --version
 ```
 
 ---
 
-## Obiettivo del repository
-
-Questo playground serve per:
-
-* esercitarsi con il linguaggio C++
-* testare nuovi concetti
-* sperimentare senza paura di rompere tutto
-* costruire abitudine quotidiana alla programmazione
-
-Non è pensato per essere perfetto.
-È pensato per essere **usato spesso**.
-
----
-
-## Convenzioni sui file
-
-Usa nomi numerati per mantenere ordine:
+## File naming convention
 
 ```
-01_hello.cpp
-02_input.cpp
-03_conditions.cpp
-04_loops.cpp
-05_functions.cpp
+ex_02_1.cpp   ← chapter 2, exercise 1
+ex_02_2.cpp   ← chapter 2, exercise 2
+ex_04_1.cpp   ← chapter 4, exercise 1
 ```
